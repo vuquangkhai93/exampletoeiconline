@@ -13,3 +13,14 @@
 /toeic-web/target
 /toeic-web/toeic-web.iml
 /toeic-web-logic/target
+/toeic-core-common/*.iml
+/toeic-core-dao/toeic-core-dao.iml
+/toeic-core-dao-impl/toeic-core-dao-impl.iml
+/toeic-core-data/toeic-core-data.iml
+/toeic-core-dto/toeic-core-dto.iml
+/toeic-core-persistence-data/toeic-core-persistence-data.iml
+/toeic-core-service/toeic-core-service.iml
+/toeic-core-serviceimpl/toeic-core-serviceimpl.iml
+/toeic-core-utils/toeic-core-utils.iml
+/toeic-core-web/toeic-core-web.iml
+/toeic-web-logic/toeic-web-logic.iml
