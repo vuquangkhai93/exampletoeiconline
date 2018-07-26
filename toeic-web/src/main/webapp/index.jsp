@@ -1,8 +1,3 @@
-<html>
-<header>
-<title>Test Project</title>
-</header>
-<body>
-<h1>Test project</h1>
-</body>
-</html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="/common/taglib.jsp"%>
+<c:redirect url="/home.html" />
