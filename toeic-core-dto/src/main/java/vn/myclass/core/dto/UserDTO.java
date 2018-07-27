@@ -1,10 +1,9 @@
-﻿package vn.myclass.core.dto;
+package vn.myclass.core.dto;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
 
 public class UserDTO implements Serializable {
-
     private Integer userId;
     private String name;
     private String password;

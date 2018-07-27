@@ -1,4 +1,4 @@
-﻿package vn.myclass.core.dto;
+package vn.myclass.core.dto;
 
 import java.io.Serializable;
 

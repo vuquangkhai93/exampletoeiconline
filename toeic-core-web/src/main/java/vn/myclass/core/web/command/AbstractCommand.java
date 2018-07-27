@@ -1,4 +1,4 @@
-﻿package vn.myclass.core.web.command;
+package vn.myclass.core.web.command;
 
 import java.util.List;
 
