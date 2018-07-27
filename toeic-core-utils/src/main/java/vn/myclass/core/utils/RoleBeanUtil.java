@@ -1,16 +1,17 @@
-﻿package vn.myclass.core.utils;
+package vn.myclass.core.utils;
 
+import vn.myclass.core.dto.RoleDTO;
 import vn.myclass.core.persistence.entity.RoleEntity;
 
 public class RoleBeanUtil {
-    public static RoleDTO2 entity2Dto(RoleEntity entity){
-        RoleDTO2 dto = new RoleDTO2();
+    public static RoleDTO entity2Dto(RoleEntity entity){
+        RoleDTO dto = new RoleDTO();
         dto.setRoleId(entity.getRoleId());
         dto.setName(entity.getName());
         return dto;
     }
 
-    public static RoleEntity dto2Entity(RoleDTO2 dto){
+    public static RoleEntity dto2Entity(RoleDTO dto){
         RoleEntity entity = new RoleEntity();
         entity.setRoleId(dto.getRoleId());
         entity.setName(dto.getName());

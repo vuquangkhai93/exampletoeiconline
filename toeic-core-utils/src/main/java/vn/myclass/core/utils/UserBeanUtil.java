@@ -1,4 +1,4 @@
-﻿package vn.myclass.core.utils;
+package vn.myclass.core.utils;
 
 import vn.myclass.core.dto.UserDTO;
 import vn.myclass.core.persistence.entity.UserEntity;
