@@ -25,6 +25,7 @@ public class LoginController extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("/views/web/login.jsp");
         rd.forward(request, response);
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         UserCommand command = FormUtil.populate(UserCommand.class, request);
@@ -35,22 +36,19 @@ public class LoginController extends HttpServlet {
             if(userService.isUserExist(pojo) != null){
                 if(userService.findRoleByUser(pojo)!= null && userService.findRoleByUser(pojo).getRoleDTO() != null){
                     if(userService.findRoleByUser(pojo).getRoleDTO().getName().equals(WebConstant.ROLE_ADMIN)){
-                        request.setAttribute(WebConstant.ALERT, WebConstant.TYPE_SUCCESS);
-                        request.setAttribute(WebConstant.MESSAGE_RESPONSE, "Ban la Admin !");
+                        response.sendRedirect("admin-home.html");
                     }else if(userService.findRoleByUser(pojo).getRoleDTO().getName().equals(WebConstant.ROLE_USER)){
-                        request.setAttribute(WebConstant.ALERT, WebConstant.TYPE_SUCCESS);
-                        request.setAttribute(WebConstant.MESSAGE_RESPONSE, "Ban la User !");
+                        response.sendRedirect("home.html");
                     }
                 }
-
             }
         }catch (NullPointerException e){
             log.error(e.getMessage(), e);
             request.setAttribute(WebConstant.ALERT, WebConstant.TYPE_ERROR);
             request.setAttribute(WebConstant.MESSAGE_RESPONSE, "Ten hoac mat khau sai !");
+            RequestDispatcher rd = request.getRequestDispatcher("/views/web/login.jsp");
+            rd.forward(request, response);
         }
 
-        RequestDispatcher rd = request.getRequestDispatcher("/views/web/login.jsp");
-        rd.forward(request, response);
     }
 }

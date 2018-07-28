@@ -9,7 +9,7 @@ import java.util.List;
 public class ListenGuidelineEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer listenGuideline;
+    private Integer listenGuidelineId;
 
     @Column(name = "title")
     private String title;
@@ -37,12 +37,12 @@ public class ListenGuidelineEntity {
         this.commentEntityList = commentEntityList;
     }
 
-    public Integer getListenGuideline() {
-        return listenGuideline;
+    public Integer getListenGuidelineId() {
+        return listenGuidelineId;
     }
 
-    public void setListenGuideline(Integer listenGuideline) {
-        this.listenGuideline = listenGuideline;
+    public void setListenGuidelineId(Integer listenGuidelineId) {
+        this.listenGuidelineId = listenGuidelineId;
     }
 
     public String getTitle() {

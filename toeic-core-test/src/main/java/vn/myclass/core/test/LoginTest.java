@@ -9,7 +9,7 @@ import vn.myclass.core.persistence.entity.UserEntity;
 
 public class LoginTest {
     private final Logger log = Logger.getLogger(this.getClass());
-    @Test
+    /*@Test
     public void checkIsUserExist(){
         UserDao userDao = new UserDaoImpl();
         String name = "truongtunglam";
@@ -20,14 +20,14 @@ public class LoginTest {
         }else {
             log.error("login fail");
         }
-    }
+    }*/
 
-    @Test
+   /* @Test
     public void checkFindRoleByUser(){
         UserDao userDao = new UserDaoImpl();
         String name = "truongtunglam";
         String password = "123456";
         UserEntity entity = userDao.findRoleByUser(name, password);
         log.error(entity.getRoleEntity().getRoleId()+"-"+entity.getRoleEntity().getName());
-    }
+    }*/
 }
