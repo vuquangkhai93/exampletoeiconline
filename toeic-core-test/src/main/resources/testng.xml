@@ -3,6 +3,9 @@
     <test name="case1">
         <classes>
             <class name="vn.myclass.core.test.LoginTest"/>
+            <class name="vn.myclass.core.test.ListenGuidelineTest"/>
+            <class name="vn.myclass.core.test.ReviewHashMap"/>
+
         </classes>
     </test>
 </suite>
